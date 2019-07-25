@@ -1,0 +1,31 @@
+package Curs_21_Colectia_LinkedList;
+
+public class Towns implements Comparable<Towns> {
+	
+	//Campuri
+	
+	private String numeOras;
+	private int kilometri;
+	
+	//Constructor
+	Towns (String numeOras, int kilometri){
+		this.numeOras = numeOras;
+		this.kilometri = kilometri;
+	}
+	
+	@Override
+	public int compareTo(Towns newElement) {
+		if(this.kilometri < newElement.kilometri) {
+			return -1;
+		}else if (this.kilometri == newElement.kilometri) {
+			return 0;
+		} else {
+			return 1;
+		}
+	}
+	
+	@Override
+	public String toString() {
+		return this.numeOras + " " + this.kilometri;
+	}
+}
