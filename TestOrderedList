@@ -1,0 +1,17 @@
+package Curs_21_Colectia_LinkedList;
+
+public class TestOrderedList <T extends Comparable<T>>{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		OrderedList<Towns> orderedTownsList = new OrderedList<Towns>();
+		orderedTownsList.addInOrderedList(new Towns("Timisoara", 100));
+		orderedTownsList.addInOrderedList(new Towns("Arad", 150));
+		orderedTownsList.addInOrderedList(new Towns("Bucuresti", 0));
+		orderedTownsList.addInOrderedList(new Towns("Ploiesti", 30));
+
+		System.out.println(orderedTownsList);
+	}
+}
